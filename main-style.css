@@ -33,13 +33,13 @@
             width: 1.333333em;
             line-height: 1em;
         }
-	.fi-ru {
+    	.fi-ru {
             background-image: url(https://minisurka.github.io/mixertack.com/data/flags/ru.svg);
         }
-	.fi-ua {
+    	.fi-ua {
             background-image: url(https://minisurka.github.io/mixertack.com/data/flags/ua.svg);
         }
-	.fi-us {
+	    .fi-us {
             background-image: url(https://minisurka.github.io/mixertack.com/data/flags/us.svg);
         }
         .lang-switcher {
