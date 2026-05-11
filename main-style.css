@@ -27,7 +27,44 @@
             color: var(--ms-color-text);
             line-height: 1.5;
         }
-        
+        .fi {
+            position: relative;
+            display: inline-block;
+            width: 1.333333em;
+            line-height: 1em;
+        }
+	.fi-ru {
+            background-image: url(https://minisurka.github.io/mixertack.com/data/flags/ru.svg);
+        }
+	.fi-ua {
+            background-image: url(https://minisurka.github.io/mixertack.com/data/flags/ua.svg);
+        }
+	.fi-us {
+            background-image: url(https://minisurka.github.io/mixertack.com/data/flags/us.svg);
+        }
+        .lang-switcher {
+            display: flex;
+            gap: 4px; 
+            margin-left: 10px; 
+            align-items: center;
+        }
+
+        .lang-switcher button {
+            background: transparent;
+            border: 1px solid rgba(0,0,0,0.5);
+            color: #aaa;
+            padding: 2px 6px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.65rem;
+            line-height: 1;
+            transition: 0.2s;
+        }
+
+        .lang-switcher button:hover {
+            color: #000;
+            border-color: #000;
+        }
         /* Header */
         .ms-header {
             background-color: var(--ms-color-surface);
