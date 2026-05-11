@@ -1,0 +1,458 @@
+        :root {
+            --ms-color-primary: #0078d4;
+            --ms-color-primary-hover: #106ebe;
+            --ms-color-background: #faf9f8;
+            --ms-color-surface: #ffffff;
+            --ms-color-text: #201f1e;
+            --ms-color-text-secondary: #605e5c;
+            --ms-color-border: #e1dfdd;
+            --ms-shadow-small: 0 2px 4px rgba(0,0,0,0.04);
+            --ms-shadow-medium: 0 4px 8px rgba(0,0,0,0.08);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Плавная прокрутка для всего документа */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Segoe UI Web (West European)', 'Inter', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+            background-color: var(--ms-color-background);
+            color: var(--ms-color-text);
+            line-height: 1.5;
+        }
+        
+        /* Header */
+        .ms-header {
+            background-color: var(--ms-color-surface);
+            border-bottom: 1px solid var(--ms-color-border);
+            padding: 0 5%;
+            height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--ms-shadow-small);
+        }
+        
+        .ms-header-left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .ms-logo-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--ms-color-text);
+            letter-spacing: -0.3px;
+            cursor: pointer;
+        }
+        
+        .ms-header-nav {
+            margin-left: 40px;
+            display: flex;
+            gap: 28px;
+            font-size: 14px;
+            color: var(--ms-color-text);
+        }
+        
+        .ms-header-nav a {
+            text-decoration: none;
+            color: var(--ms-color-text);
+            cursor: pointer;
+            padding: 4px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .ms-header-nav a:hover {
+            border-bottom-color: var(--ms-color-primary);
+        }
+        
+        .ms-header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        /* Кнопка GitHub */
+        .ms-github-btn {
+            background-color: #24292e;
+            border: 1px solid #24292e;
+            border-radius: 4px;
+            padding: 6px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            font-family: inherit;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+        }
+        
+        .ms-github-btn:hover {
+            background-color: #2f363d;
+            border-color: #2f363d;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        
+        .ms-github-btn:active {
+            transform: scale(0.98);
+            background-color: #1b1f23;
+        }
+        
+        .ms-github-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+        
+        /* Кнопка форума в стиле Microsoft */
+        .ms-forum-btn {
+            background-color: transparent;
+            border: 1px solid var(--ms-color-border);
+            border-radius: 4px;
+            padding: 6px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            font-family: inherit;
+            color: var(--ms-color-text);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .ms-forum-btn:hover {
+            background-color: #f0f0f0;
+            border-color: var(--ms-color-primary);
+            color: var(--ms-color-primary);
+        }
+        
+        .ms-forum-btn:active {
+            transform: scale(0.98);
+        }
+        
+        /* Main Container */
+        .ms-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 5%;
+        }
+        
+        /* Breadcrumb */
+        .ms-breadcrumb {
+            font-size: 14px;
+            color: var(--ms-color-text-secondary);
+            margin-bottom: 24px;
+        }
+        
+        .ms-breadcrumb span {
+            color: var(--ms-color-primary);
+            cursor: pointer;
+        }
+        
+        .ms-breadcrumb span:hover {
+            text-decoration: underline;
+        }
+        
+        /* Hero Section */
+        .ms-hero {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .ms-hero-title {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--ms-color-text);
+            margin-bottom: 16px;
+        }
+        
+        .ms-hero-github {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #24292e;
+            color: #ffffff;
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: inherit;
+            transition: all 0.2s ease;
+            box-shadow: var(--ms-shadow-small);
+        }
+        
+        .ms-hero-github:hover {
+            background-color: #2f363d;
+            box-shadow: var(--ms-shadow-medium);
+            transform: translateY(-1px);
+        }
+        
+        .ms-hero-github:active {
+            transform: scale(0.98);
+        }
+        
+        .ms-hero-github svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+        
+        /* Content Card */
+        .ms-content-card {
+            background: var(--ms-color-surface);
+            border-radius: 4px;
+            padding: 32px;
+            margin: 32px 0;
+            border: 1px solid var(--ms-color-border);
+            box-shadow: var(--ms-shadow-small);
+        }
+        
+        .ms-content-card p {
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: var(--ms-color-text);
+        }
+        
+        .ms-content-card p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .ms-content-card a {
+            color: var(--ms-color-primary);
+            text-decoration: none;
+        }
+        
+        .ms-content-card a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Section Headers */
+        .ms-section-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 48px 0 24px;
+            color: var(--ms-color-text);
+            scroll-margin-top: 70px; /* Чтобы заголовок не перекрывался шапкой при прокрутке */
+        }
+        
+        /* Table стиль для версий */
+        .ms-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--ms-color-surface);
+            border: 1px solid var(--ms-color-border);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: var(--ms-shadow-small);
+        }
+        
+        .ms-table th {
+            text-align: left;
+            padding: 16px 20px;
+            background-color: var(--ms-color-background);
+            border-bottom: 1px solid var(--ms-color-border);
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--ms-color-text-secondary);
+        }
+        
+        .ms-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--ms-color-border);
+            font-size: 15px;
+        }
+        
+        .ms-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .ms-table tr:hover {
+            background-color: #f8f8f8;
+        }
+        
+        .ms-table a {
+            color: var(--ms-color-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .ms-table a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Badge */
+        .ms-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: #e1dfdd;
+            color: var(--ms-color-text);
+            margin-left: 8px;
+        }
+        
+        .ms-badge-beta {
+            background-color: #ffb900;
+            color: #000;
+        }
+        
+        /* Footer */
+        .ms-footer {
+            background-color: #f2f2f2;
+            padding: 32px 5%;
+            border-top: 1px solid var(--ms-color-border);
+            margin-top: 60px;
+        }
+        
+        .ms-footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .ms-footer-links {
+            display: flex;
+            gap: 24px;
+            font-size: 13px;
+            color: var(--ms-color-text-secondary);
+        }
+        
+        .ms-footer-contact {
+            font-size: 14px;
+            color: var(--ms-color-text);
+        }
+        
+        .ms-footer-contact a {
+            color: var(--ms-color-primary);
+            text-decoration: none;
+        }
+        
+        .ms-footer-contact a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Info Box */
+        .ms-info-box {
+            background-color: #f0f6ff;
+            border-left: 4px solid var(--ms-color-primary);
+            padding: 20px 24px;
+            margin: 24px 0;
+            scroll-margin-top: 70px; /* Для якорной ссылки Документация */
+        }
+        
+        .ms-info-box strong {
+            color: var(--ms-color-text);
+        }
+        
+        /* Developer info */
+        .ms-developer-info {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin: 24px 0;
+        }
+        
+        .ms-developer-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .ms-developer-label {
+            font-size: 13px;
+            color: var(--ms-color-text-secondary);
+            margin-bottom: 4px;
+        }
+        
+        .ms-developer-value {
+            font-size: 15px;
+            color: var(--ms-color-text);
+        }
+        
+        .ms-developer-value a {
+            color: var(--ms-color-primary);
+            text-decoration: none;
+        }
+        
+        .ms-developer-value a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .ms-header-nav {
+                display: none;
+            }
+            
+            .ms-hero-title {
+                font-size: 36px;
+            }
+            
+            .ms-section-title {
+                font-size: 24px;
+            }
+            
+            .ms-table {
+                font-size: 14px;
+            }
+            
+            .ms-table th,
+            .ms-table td {
+                padding: 12px 16px;
+            }
+            
+            .ms-content-card {
+                padding: 24px;
+            }
+            
+            .ms-forum-btn,
+            .ms-github-btn {
+                padding: 4px 12px;
+                font-size: 12px;
+            }
+            
+            .ms-hero-github {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .ms-container {
+                padding: 24px 16px;
+            }
+            
+            .ms-hero-title {
+                font-size: 32px;
+            }
+            
+            .ms-header-right {
+                gap: 8px;
+            }
+        }
