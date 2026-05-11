@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="main_page_title">MixerTack</title>
+    <link rel="icon" href="MiOS_ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css">
+    <link rel="stylesheet" href="https://minisurka.github.io/mixertack.com/main-style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="ms-header">
+        <div class="ms-header-left">
+            <span class="ms-logo-text" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">MixerTack</span>
+            <nav class="ms-header-nav">
+                <a href="#main" data-i18n="main_home">Главная</a>
+                <a href="#download" data-i18n="main_download">Скачать</a>
+                <a href="#documentation" data-i18n="main_documentation">Документация</a>
+                <a href="#source" data-i18n="main_source_code">Исходный код</a>
+                <a href="#archive" data-i18n="archive">Архив</a>
+				<div class="lang-switcher">
+                    <button onclick="setLang('ru')"><span class="fi fi-ru"></span> RU</button>
+                    <button onclick="setLang('uk')"><span class="fi fi-ua"></span> UK</button>
+                    <button onclick="setLang('en')"><span class="fi fi-us"></span> EN</button>
+                </div>
+            </nav>
+        </div>
+        <div class="ms-header-right">
+            <!-- Кнопка GitHub в шапке -->
+            <a href="https://github.com/minisurka/mixertack.com" target="_blank" class="ms-github-btn" title="Перейти на GitHub">
+                <!-- Иконка GitHub -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                GitHub
+            </a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="ms-container">
+        
+        <!-- Якорь для Главной -->
+        <div id="main"></div>
+        
+        <!-- Breadcrumb -->
+        <div class="ms-breadcrumb">
+            <span style="color: var(--ms-color-text); cursor: default;" data-i18n="main_home">Главная</span>
+        </div>
+        
+        <!-- Hero Section -->
+        <div class="ms-hero">
+            <div>
+                <h1 class="ms-hero-title">MixerTack</h1>
+            </div>
+            <!-- Кнопка GitHub в главном блоке -->
+            <a href="https://github.com/minisurka/mixertack.com" target="_blank" class="ms-hero-github" title="Перейти на GitHub репозиторий">
+                <!-- Иконка GitHub -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                GitHub
+            </a>
+        </div>
+        
+        <!-- Developer Info -->
+        <div class="ms-developer-info">
+            <div class="ms-developer-item">
+                <span class="ms-developer-label" data-i18n="deveolper">Разработчик</span>
+                <span class="ms-developer-value">MiniSurka</span>
+            </div>
+            <div class="ms-developer-item">
+                <span class="ms-developer-label" data-i18n="site_author">Сайт автора</span>
+                <span class="ms-developer-value">
+                    <a href="#" target="_blank">empty*</a>
+                </span>
+            </div>
+            <!-- Якорь для Архива -->
+            <div class="ms-developer-item" id="archive">
+                <span class="ms-developer-label" data-i18n="archive">Архив</span>
+                <span class="ms-developer-value">
+                    <a href="https://mikhailef.github.io/RuArchive.org/" target="_blank">RuArchive.org</a>
+                </span>
+            </div>
+        </div>
+        
+        <!-- Main Description Card -->
+        <div class="ms-content-card">
+            <p data-i18n="main_ms_content_card_1"><strong>MixerTack</strong> — Официальный открытый сайт с проектами.</p>
+            <p data-i18n="main_ms_content_card_2">Мы будем открывать исходный код проектов, но не сразу и постепенно.</p>
+      <!--      <p>MiOS 1.1! Новая версия системы в себе несёт: 1-полноценный GUi интерфейс и вместе с ним и оболочка рабочего стола под названием "MiDE"! 2-поддержка PS/2 мыши и частично USB! 3-ядро и компоненты переписанны на Rust в пользу GUi!</p>
+            <p>Сайт архива (там тоже можно скачать MiOS, а также выкладывать любой контент): 
+                <a href="https://mikhailef.github.io/RuArchive.org/" target="_blank">https://mikhailef.github.io/RuArchive.org/</a>
+           </p>
+        --></div>
+        
+        <!-- Documentation Section с якорем -->
+     <!--   <div id="documentation" class="ms-info-box">
+            <p><strong>Документация MiOS до 4.4</strong></p>
+            <p>MiOS — это операционная система, написанная на ASM (FASM, NASM) и C. В последних версиях системы есть полноценная файловая система. В этой документации вы узнаете, какая папка за что отвечает.</p>
+            <p><strong>Папка com</strong> — на данный момент ничего не находится. Эта папка не задействована в системе, так как является бета-корнем (бета-корень — это папка, которая на неопределённый срок не задействована в системе, и её можно спокойно удалить).</p>
+            <p><strong>Папка MiOS</strong> — отвечает за загрузку boot.bin, в котором находится загрузчик системы. Удаление этой папки приведёт к нестабильной работе системы.</p>
+            <p><strong>Папка kernel или com.kernel</strong> — содержит компоненты для запуска и корректной работы ядра системы. Удаление этой папки приведёт к нестабильной работе или полному отказу системы.</p>
+            <p><strong>Папка includes</strong> — хранилище независимых функций для работы команд</p>
+        </div>
+        
+        <!-- Download Versions Section с якорем -->
+        <h2 id="download" class="ms-section-title" data-i18n="main_main">MixerTack - Главная</h2>
+        
+        <table class="ms-table">
+            <thead>
+                <tr>
+                    <th data-i18n="main_type">Тип</th>
+                    <th data-i18n="main_description">Описание</th>
+                    <th data-i18n="main_go">Перейти</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Github</strong></td>
+                    <td data-i18n="main_table_github_description">хз! :D</td>
+                    <td><a href="projects.html" target="_blank">none.html</a></td>
+                </tr>
+                <tr>
+                    <td><strong data-i18n="main_table_projects_name">Проекты</strong></td>
+                    <td data-i18n="main_table_projects_description">Открытые проекты! :D</td>
+                    <td><a href="projects.html" target="_blank" data-i18n="main_table_projects_namefile">Проекты.html</a></td>
+                </tr>
+                <tr>
+                    <td><strong data-i18n="main_table_mini_projects_name">Мини-проекты</strong></td>
+                    <td data-i18n="main_table_mini_projects_description">Маленькие проекты для прикола :)</td>
+                    <td><a href="mini-projects.html" target="_blank" data-i18n="main_table_mini_projects_namefile">Мини-проекты.html</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- Source Code Section с якорем
+        <h2 id="source" class="ms-section-title">Исходный код MixerOS</h2>
+        
+        <table class="ms-table">
+            <thead>
+                <tr>
+                    <th>Версия</th>
+                    <th>Описание</th>
+                    <th>Скачать</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>MixerOS 1.1 NASM BETA 1</strong></td>
+                    <td>Исходный код первой beta версии</td>
+                    <td><a href="MixerOS-Source-code-v1.1.zip" target="_blank">MixerOS-Source-code-v1.1.zip</a></td>
+                </tr>
+                <tr>
+                    <td><strong>MixerOS 2.0 NASM BETA </strong></td>
+                    <td>Исходный код первой beta версии</td>
+                    <td><a href="MixerOS-Source-code-v2.0.zip" target="_blank">MixerOS-Source-code-v2.0.zip</a></td>
+                </tr>
+            </tbody>
+        </table>-->
+        
+    </div>
+    
+    <!-- FOOTER -->
+    <footer class="ms-footer">
+        <div class="ms-footer-content">
+            <div class="ms-footer-links">
+                <span>MixerTack</span>
+                <span data-i18n="main_documentation">Документация</span>
+                <span data-i18n="main_source_code">Исходный код</span>
+                <span data-i18n="archive">Архив</span>
+                <span>© MiniSurka 2026</span>
+            </div>
+          <!--  <div class="ms-footer-contact">
+                Обратная связь: <a href="mailto:mikhailofficial2001@gmail.com">mikhailofficial2001@gmail.com</a>
+          -->  </div>
+        </div>
+    </footer>
+
+</body>
+<script src="lang.js"></script>
+</html>
