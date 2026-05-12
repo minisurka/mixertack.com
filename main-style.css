@@ -34,13 +34,13 @@
             line-height: 1em;
         }
     	.fi-ru {
-            background-image: url(https://minisurka.github.io/mixertack.com/data/flags/ru.svg);
+            background-image: url(https://cdn.jsdelivr.net/npm/flag-icons/flags/4x3/ru.svg);
         }
     	.fi-ua {
-            background-image: url(https://minisurka.github.io/mixertack.com/data/flags/ua.svg);
+            background-image: url(https://cdn.jsdelivr.net/npm/flag-icons/flags/4x3/ua.svg);
         }
 	    .fi-us {
-            background-image: url(https://minisurka.github.io/mixertack.com/data/flags/us.svg);
+            background-image: url(https://cdn.jsdelivr.net/npm/flag-icons/flags/4x3/us.svg);
         }
         .lang-switcher {
             display: flex;
