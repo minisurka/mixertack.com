@@ -27,32 +27,6 @@
             color: var(--ms-color-text);
             line-height: 1.5;
         }
-        .fib,.fi {
-                background-size:contain;
-                background-position:50%;
-                background-repeat:no-repeat
-        }
-        .fi {
-                position:relative;
-                display:inline-block;
-                width:1.333333em;
-                line-height:1em
-        }
-        .fi:before {
-                content:" "
-        }
-        .fi.fis {
-                width:1em
-        }	
-        .fi-ru {
-            background-image: url(https://cdn.jsdelivr.net/npm/flag-icons/flags/4x3/ru.svg);
-        }
-    	.fi-ua {
-            background-image: url(https://cdn.jsdelivr.net/npm/flag-icons/flags/4x3/ua.svg);
-        }    	
-    	.fi-us {
-            background-image: url(https://cdn.jsdelivr.net/npm/flag-icons/flags/4x3/us.svg);
-        }
         .lang-switcher {
             display: flex;
             gap: 4px; 
