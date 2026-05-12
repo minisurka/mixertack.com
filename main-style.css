@@ -27,13 +27,9 @@
             color: var(--ms-color-text);
             line-height: 1.5;
         }
-        .fi {
-            position: relative;
-            display: inline-block;
-            width: 1.333333em;
-            line-height: 1em;
-        }
-    	.fi-ru {
+        .fib,.fi{background-size:contain;background-position:50%;background-repeat:no-repeat}.fi{position:relative;display:inline-block;width:1.333333em;line-height:1em}.fi:before{content:" "}.fi.fis{width:1em}
+    	
+        .fi-ru {
             background-image: url(https://cdn.jsdelivr.net/npm/flag-icons/flags/4x3/ru.svg);
         }
     	.fi-ua {
